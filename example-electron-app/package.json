@@ -1,0 +1,58 @@
+{
+  "name": "electron-webauthn-mac-example-electron-app",
+  "version": "1.0.0",
+  "description": "Example Electron app demonstrating electron-webauthn-mac usage",
+  "license": "MIT",
+  "author": "Vault12",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:mac": "CSC_IDENTITY_AUTO_DISCOVERY=true electron-builder --mac dir --config.mac.type=development"
+  },
+  "dependencies": {
+    "electron-webauthn-mac": "1.0.0"
+  },
+  "devDependencies": {
+    "@electron/notarize": "3.1.1",
+    "electron": "39.2.5",
+    "electron-builder": "26.3.4"
+  },
+  "build": {
+    "appId": "com.example",
+    "productName": "WebAuthnDemo",
+    "asar": true,
+    "asarUnpack": [
+      "**/*.node"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "hardenedRuntime": true,
+      "entitlements": "entitlements.mac.plist",
+      "entitlementsInherit": "entitlements.mac.inherit.plist",
+      "gatekeeperAssess": false,
+      "type": "development",
+      "notarize": false
+    },
+    "dmg": {
+      "sign": true
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "node_modules/**/*",
+      "!node_modules/.bin",
+      "!node_modules/**/test/**",
+      "!node_modules/**/{README,readme}.md",
+      "!**/node_modules/*/{CHANGELOG.md,LICENSE,license}"
+    ]
+  }
+}

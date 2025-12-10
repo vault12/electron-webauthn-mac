@@ -1,0 +1,46 @@
+node_modules
+dist
+**/*/node_modules
+# Should be regenerated locally using .clangd.example
+.clangd
+# IDE config with local paths
+**/*/.cache
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Native addon build artifacts
+build_swift/
+compile_commands.json
+
+# Native addon prebuilds
+**/native/*.node
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+DerivedData/
+build/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# CocoaPods (if used)
+Pods/
+Podfile.lock
+
+# Carthage (if used)
+Carthage/Build/
+Carthage/Checkouts/
