@@ -1,7 +1,7 @@
 # electron-webauthn-mac
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/af771649-da55-4c97-8ce8-55e25f9fe490"
+  <img src="https://github.com/user-attachments/assets/27ba0f24-f990-43d6-9edd-4dad8c06c0ba"
     alt="Electron Webauthn Mac">
 </p>
 
