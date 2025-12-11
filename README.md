@@ -121,7 +121,7 @@ Use a tool like [electron-builder](https://www.electron.build/) to build a signe
 
 ## Example Electron App
 
-<img width="300" height="213" align="right" alt="Example Electron app" src="https://github.com/user-attachments/assets/cd630eac-7405-4353-a3a0-163e673d36dd" />
+<img width="300" height="213" align="right" alt="Example Electron app" src="https://github.com/user-attachments/assets/c528087e-85fa-4008-91fc-50bbf47aa379" />
 
 
 The repository includes an [example Electron application](example-electron-app/) demonstrating the addon usage. It shows how to expose the addon from the main process to the renderer thread using Electron's `contextBridge` and `ipcMain`/`ipcRenderer`.
